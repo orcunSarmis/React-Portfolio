@@ -1,69 +1,50 @@
 $primary-color: #ffd700;
 
 @import 'animate.css';
+@import '~loaders.css/src/animations/pacman.scss';
 
 @font-face {
   font-family: 'Helvetica Neue';
   src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'La Belle Aurore';
-  src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2');
+  src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2'),
+    url('./assets/fonts/LaBelleAurore.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'Coolvetica';
-  src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
+  src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2'),
+    url('./assets/fonts/CoolveticaRg-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 input,
 textarea {
-  font-family: 'Helvetica Neue';
-}
-.face1 {
-  transform: translateZ(100px);
-  color: #dd0031;
-}
-.face2 {
-  transform: rotateY(90deg) translateZ(100px);
-  color: #f06529;
-}
-.face3 {
-  transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
-  color: #28a4d9;
-}
-.face4 {
-  transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
-  color: #5ed4f4;
-}
-.face5 {
-  transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
-  color: #efd81d;
-}
-.face6 {
-  transform: rotateX(-90deg) translateZ(100px);
-  color: #ec4d28;
+  font-family: 'Helvetica Neue', sans-serif;
 }
 
-@keyframes spincube {
-  from,
-  to {
-    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-  }
-  16% {
-    transform: rotateY(-90deg);
-  }
-  33% {
-    transform: rotateY(-90deg) rotateZ(90deg);
-  }
-  50% {
-    transform: rotateY(-180deg) rotateZ(90deg);
-  }
-  66% {
-    transform: rotateY(-270deg) rotateX(90deg);
-  }
-  83% {
-    transform: rotateX(90deg);
-  }
+.loader-hidden {
+  display: none;
+}
+
+.loader-active {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  animation: fadeOut 1s 1s;
+  animation-fill-mode: forwards;
 }
