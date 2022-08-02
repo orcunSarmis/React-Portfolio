@@ -22,9 +22,9 @@ const Contact = () => {
     emailjs
       .sendForm(
         'gmail',
-        'template_YeJhZkgb',
+        'template_nrw9ybg',
         form.current,
-        'your-token'
+        'yJ_a8bm77x9_G-VPW'
       )
       .then(
         () => {
@@ -88,20 +88,20 @@ const Contact = () => {
           </div>
         </div>
         <div className="info-map">
-          Slobodan Gajić,
+          Yilmaz Orcun SARMIS,
           <br />
-          Serbia,
+          Australia,
           <br />
           Branka RadiČevića 19, 22000 <br />
           Sremska Mitrovica <br />
           <br />
-          <span>freelancerslobodan@gmail.com</span>
+          <span>yorcunsarmis@gmail.com</span>
         </div>
         <div className="map-wrap">
-          <MapContainer center={[44.96366, 19.61045]} zoom={13}>
+          <MapContainer center={[ -27.470125, 153.021072]} zoom={13}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[44.96366, 19.61045]}>
-              <Popup>Sloba lives here, come over for a cup of coffee :)</Popup>
+            <Marker position={[ -27.470125, 153.021072]}>
+              <Popup>Meet me here</Popup>
             </Marker>
           </MapContainer>
         </div>
