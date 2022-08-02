@@ -28,6 +28,23 @@ const Sidebar = () => (
           <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
         </NavLink>
         </nav>
+        <ul>
+            <li>
+                <a targetg="_blank" rel='noreferrer' href='https://www.linkedin.com/in/yorcun-sarmis/'>
+                    <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+                </a>
+            </li>
+            <li>
+                <a targetg="_blank" rel='noreferrer' href='https://github.com/orcunSarmis'>
+                    <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+                </a>
+            </li>
+            <li>
+                <a targetg="_blank" rel='noreferrer' href='https://www.linkedin.com/in/yorcun-sarmis/'>
+                    <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+                </a>
+            </li>
+        </ul>
     </div>
 )
 
