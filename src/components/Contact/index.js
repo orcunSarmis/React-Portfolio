@@ -11,9 +11,10 @@ const Contact = () => {
   const form = useRef()
 
   useEffect(() => {
-    return setTimeout(() => {
+    const interval = setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 3000)
+    return() => clearInterval(interval);
   }, [])
 
   const sendEmail = (e) => {
@@ -49,7 +50,7 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am interested in freelance opportunities 
+            I am interested in Full-Stack Web Development opportunities 
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
@@ -88,12 +89,12 @@ const Contact = () => {
           </div>
         </div>
         <div className="info-map">
-          Yilmaz Orcun SARMIS,
+          Yilmaz Orcun SARMIS
           <br />
-          Australia,
+          Brisbane
           <br />
-          Branka RadiČevića 19, 22000 <br />
-          Sremska Mitrovica <br />
+           <br />
+          QLD Australia <br />
           <br />
           <span>yorcunsarmis@gmail.com</span>
         </div>
@@ -111,4 +112,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Contact;

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Loader from "react-loaders";
 import AnimatedLetters from "../AnimatedLetters";
 import "./index.scss";
-import { getDocs, collection } from 'firebase/firestore';
+// import { getDocs, collection } from 'firebase/firestore';
 
 
 const Portfolio = () => { 
@@ -24,8 +24,8 @@ const Portfolio = () => {
     }, []);
 
     const getPortfolio = async () => {
-        const querySnapshot = await getDocs(collection('portfolio'));
-        setPortfolio(querySnapshot.docs.map((doc) => doc.data()));
+        // const querySnapshot = await getDocs(collection('portfolio'));
+        // setPortfolio(querySnapshot.docs.map((doc) => doc.data()));
     }
 
     console.log(portfolio);
