@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Loader from "react-loaders";
 import AnimatedLetters from "../AnimatedLetters";
+import HollyView from '../../assets/images/HollyView.png';
+import sklhub1 from '../../assets/images/sklhub1.png';
+import commentA from '../../assets/images/commentA.png';
+import WeatherDashboard from '../../assets/images/WeatherDashboard.png';
 import "./index.scss";
 // import { getDocs, collection } from 'firebase/firestore';
 
@@ -22,17 +26,29 @@ const Portfolio = () => {
     useEffect(() => {
         // getPortfolio();
     }, []);
-
     // const getPortfolio = async () => {
         // const querySnapshot = await getDocs(collection('portfolio'));
         // setPortfolio(querySnapshot.docs.map((doc) => doc.data()));
     // }
-
     console.log(portfolio);
 
     const renderPortfolio = (portfolio) => {
         return (
             <div className="images-container">
+                <div className="image-box" >
+                <img src={HollyView} className="portfolio-image" alt="cinema seats" /> 
+                <div className="content">
+                                    <p className="title">HollyView</p>
+                                    <h4 className="description"></h4>
+                                    <button
+                                        className="btn"
+                                        onClick={() => window.open(src="https://nolie88.github.io/appvengers-assemble/")}
+                                    >View</button>
+                                </div>
+                </div>               
+                <img src={sklhub1} className="image-box" alt="sklhub landing page" />
+                <img src={commentA} className="image-box" alt="techBlog landing page" />
+                <img src={WeatherDashboard} className="image-box" alt="WeatherDashboard landing page" />
                 {
                     portfolio.map((port, idx) => {
                         return (
