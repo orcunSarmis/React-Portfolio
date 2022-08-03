@@ -4,7 +4,7 @@
   
   ## Description 
   
-  A Portfolio template for developer/designers built with React.
+  Creating a portfolio to showcase my work as a web developer built with React.
 
   ## Table of Content
 
@@ -21,19 +21,19 @@
 
   ## Contributing
 
-  
+  Ideas to improve this application are welcome, [email](yorcunsarmis@gmail.com) me please.
 
   ## Installation
 
   To install necessary dependencies, run the following command:
   ```
-  
+  npm install
   ```
   ## Tests
 
   To run tests, run the following command:
   ```
-  This project do not required test.
+  No test required in this project.
   ```
   ## License
 
