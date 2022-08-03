@@ -39,16 +39,59 @@ const Portfolio = () => {
                 <img src={HollyView} className="portfolio-image" alt="cinema seats" /> 
                 <div className="content">
                                     <p className="title">HollyView</p>
-                                    <h4 className="description"></h4>
+                                    <h4 className="description">movie's information from OMDB's API </h4>
                                     <button
                                         className="btn"
-                                        onClick={() => window.open(src="https://nolie88.github.io/appvengers-assemble/")}
+                                        onClick={(e) => {
+                                            e.preventDefault();
+                                            window.location.href='https://nolie88.github.io/appvengers-assemble/';
+                                            }}
                                     >View</button>
                                 </div>
-                </div>               
-                <img src={sklhub1} className="image-box" alt="sklhub landing page" />
-                <img src={commentA} className="image-box" alt="techBlog landing page" />
-                <img src={WeatherDashboard} className="image-box" alt="WeatherDashboard landing page" />
+                </div>  
+                <div className="image-box" >             
+                <img src={sklhub1} className="portfolio-image" alt="sklhub landing page" />
+                                <div className="content">
+                                    <p className="title">SklHub</p>
+                                    <h4 className="description">Will facilitate money-free bartering system</h4>
+                                    <button
+                                        className="btn"
+                                        onClick={(e) => {
+                                            e.preventDefault();
+                                            window.location.href='https://warm-citadel-17427.herokuapp.com/';
+                                            }}
+                                    >View</button>
+                                </div>
+                </div>            
+                <div className="image-box" >             
+                <img src={commentA} className="portfolio-image" alt="techBlog landing page" />
+                                <div className="content">
+                                    <p className="title">TechBlog</p>
+                                    <h4 className="description">Tech Blog is a CMS-style blog site</h4>
+                                    <button
+                                        className="btn"
+                                        onClick={(e) => {
+                                            e.preventDefault();
+                                            window.location.href='https://fast-ocean-21178.herokuapp.com/';
+                                            }}
+                                    >View</button>
+                                </div>
+                </div>       
+                <div className="image-box" >             
+                <img src={WeatherDashboard} className="portfolio-image" alt="WeatherDashboard landing page" />
+                                <div className="content">
+                                    <p className="title">WeatherDashboard</p>
+                                    <h4 className="description">Designed to display weather conditions</h4>
+                                    <button
+                                        className="btn"
+                                        onClick={(e) => {
+                                            e.preventDefault();
+                                            window.location.href='https://orcunsarmis.github.io/Weather-Dashboard/';
+                                            }}
+                                    >View</button>
+                                </div>
+                </div>  
+
                 {
                     portfolio.map((port, idx) => {
                         return (
