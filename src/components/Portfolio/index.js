@@ -20,13 +20,13 @@ const Portfolio = () => {
     });
 
     useEffect(() => {
-        getPortfolio();
+        // getPortfolio();
     }, []);
 
-    const getPortfolio = async () => {
+    // const getPortfolio = async () => {
         // const querySnapshot = await getDocs(collection('portfolio'));
         // setPortfolio(querySnapshot.docs.map((doc) => doc.data()));
-    }
+    // }
 
     console.log(portfolio);
 
