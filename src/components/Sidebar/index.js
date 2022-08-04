@@ -11,24 +11,24 @@ import { Link, NavLink } from 'react-router-dom'
 const Sidebar = () => {
   return (
     <div className="nav-bar">
-      <Link className="logo" to="/">
+      <Link className="logo" to="/React-Portfolio">
         <img src={LogoS} alt="Logo" />
         {/* <img className="sub-logo" src={LogoSubtitle} alt="slobodan" /> */}
       </Link>
       <nav>
-        <NavLink exact="true" activeclassname="active" to="/">
+        <NavLink exact="true" activeclassname="active" to="/React-Portfolio">
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
-        <NavLink activeclassname="active" className="about-link" to="/about">
+        <NavLink activeclassname="active" className="about-link" to="/React-Portfolio/about">
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </NavLink>
-        <NavLink activeclassname="active" className="portfolio-link" to="/portfolio">
+        <NavLink activeclassname="active" className="portfolio-link" to="/React-Portfolio/portfolio">
           <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
         </NavLink>
         <NavLink
           activeclassname="active"
           className="contact-link"
-          to="/contact"
+          to="/React-Portfolio/contact"
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
