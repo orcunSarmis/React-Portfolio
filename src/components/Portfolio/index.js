@@ -6,8 +6,6 @@ import sklhub1 from '../../assets/images/sklhub1.png';
 import commentA from '../../assets/images/commentA.png';
 import WeatherDashboard from '../../assets/images/WeatherDashboard.png';
 import "./index.scss";
-// import { getDocs, collection } from 'firebase/firestore';
-
 
 const Portfolio = () => { 
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -24,12 +22,7 @@ const Portfolio = () => {
     });
 
     useEffect(() => {
-        // getPortfolio();
     }, []);
-    // const getPortfolio = async () => {
-        // const querySnapshot = await getDocs(collection('portfolio'));
-        // setPortfolio(querySnapshot.docs.map((doc) => doc.data()));
-    // }
     console.log(portfolio);
 
     const renderPortfolio = (portfolio) => {
