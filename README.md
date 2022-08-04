@@ -30,6 +30,8 @@
   ## Usage
 
   [GitHub](https://github.com/orcunSarmis/React-Portfolio)
+  
+  [The Portfolio](https://orcunsarmis.github.io/React-Portfolio/)
 
   ## Contributing
 
